@@ -102,12 +102,12 @@ def run():
     cargo_list_adjusted = create_dict_input_1(cargo_list)
     move_list_adjusted = create_mov_list(move_list)
 
-    cargo_dict_after_movs = apply_movs(cargo_list_adjusted, move_list_adjusted, movs_logic)
-    print_result(cargo_dict_after_movs)
+    apply_movs(cargo_list_adjusted, move_list_adjusted, movs_logic)
+    print_result(cargo_list_adjusted)
 
     cargo_list_adjusted = create_dict_input_1(cargo_list)
-    cargo_dict_after_movs = apply_movs(cargo_list_adjusted, move_list_adjusted, movs_logic_2)
-    print_result(cargo_dict_after_movs)
+    apply_movs(cargo_list_adjusted, move_list_adjusted, movs_logic_2)
+    print_result(cargo_list_adjusted)
 
 
 if __name__ == '__main__':
